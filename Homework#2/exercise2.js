@@ -52,8 +52,6 @@ $(function() {
 })
 
 
-
-
 /*
 //FETCH
 function printVehicleName(name){
