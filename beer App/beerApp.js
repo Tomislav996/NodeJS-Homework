@@ -5,6 +5,7 @@ let showPerpage = 25;
 
 let beerPage = 1;
 
+let beerApi = `https://api.punkapi.com/v2/beers?page=${beerPage}&per_page=${showPerpage}`
 
 
 
@@ -207,7 +208,7 @@ mainPageBtn.addEventListener("click", () => {
 
 nextBtn.addEventListener("click", () =>{
   beerPage++
-  let beerApi = `https://api.punkapi.com/v2/beers?page=${beerPage}&per_page=${showPerpage}`
+   beerApi = `https://api.punkapi.com/v2/beers?page=${beerPage}&per_page=${showPerpage}`
   callWithFetch(beerApi, generateBeers);
 })
 
@@ -217,25 +218,25 @@ previousBtn.addEventListener("click",() =>{
     beerPage = 1;
     return;
   }
-  let beerApi = `https://api.punkapi.com/v2/beers?page=${beerPage}&per_page=${showPerpage}`
+   beerApi = `https://api.punkapi.com/v2/beers?page=${beerPage}&per_page=${showPerpage}`
   callWithFetch(beerApi, generateBeers);
 })
 
 show5btn.addEventListener("click", ()=>{
   showPerpage = 5;
- let beerApi = `https://api.punkapi.com/v2/beers?page=${beerPage}&per_page=${showPerpage}`
+  beerApi = `https://api.punkapi.com/v2/beers?page=${beerPage}&per_page=${showPerpage}`
  callWithFetch(beerApi, generateBeers)
 })
 
 show10btn.addEventListener("click", () => {
   showPerpage = 10;
-  let beerApi = `https://api.punkapi.com/v2/beers?page=${beerPage}&per_page=${showPerpage}`
+   beerApi = `https://api.punkapi.com/v2/beers?page=${beerPage}&per_page=${showPerpage}`
   callWithFetch(beerApi, generateBeers);
 })
 
 show20btn.addEventListener("click",() => {
   showPerpage = 20;
-  let beerApi = `https://api.punkapi.com/v2/beers?page=${beerPage}&per_page=${showPerpage}`
+   beerApi = `https://api.punkapi.com/v2/beers?page=${beerPage}&per_page=${showPerpage}`
   callWithFetch(beerApi, generateBeers);
   
 })
