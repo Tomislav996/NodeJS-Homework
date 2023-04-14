@@ -1,0 +1,16 @@
+Request on the route /products was made at 4:22:22 PM
+Request on the route / was made at 4:22:30 PM
+
+Request on the route /products/productEdit/1 was made at 4:25:53 PM
+Request on the route /products/productEdit/1 was made at 4:26:38 PM
+Request on the route /products/productEdit/3 was made at 4:26:49 PM
+Request on the route /products/deleteProduct/3 was made at 4:31:38 PM
+Request on the route /products/deleteProduct/3 was made at 4:31:46 PM
+Request on the route /products/deleteProduct/20 was made at 4:31:54 PM
+Request on the route /products/productInstock/20 was made at 4:32:50 PM
+Request on the route /products/productInstock/2 was made at 4:33:02 PM
+Request on the route /products/productInstock/2 was made at 4:33:56 PM
+Request on the route /products/addTocart/3 was made at 4:34:53 PM
+Request on the route /products/addTocart/4 was made at 4:34:56 PM
+Request on the route /products was made at 4:35:23 PM
+Request on the route /products/deleteAll was made at 4:35:36 PM

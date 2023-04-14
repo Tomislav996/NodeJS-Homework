@@ -1,0 +1,19 @@
+
+{
+  "id": "2",
+  "name": "tincidunt tempus",
+  "price": 10,
+  "rating": "4",
+  "description": "Curabitur ullamcorper ultricies nisi",
+  "category": "B",
+  "isInStock": true
+}
+{
+  "id": "4",
+  "name": "Nam dui magna",
+  "price": 5,
+  "rating": "1",
+  "description": "Sed commodo odio vel diam euismod",
+  "category": "D",
+  "isInStock": false
+}

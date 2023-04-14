@@ -1,0 +1,62 @@
+[
+  {
+    "id": "2",
+    "title": "Donec nec",
+    "body": "Fusce vitae lectus lacinia, mollis neque quis, lobortis ex.",
+    "author": "Aureolus Flavillus",
+    "date": "2015",
+    "tags": [
+      "health",
+      "lifestyle",
+      "workout"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Aenean quis justo tempor",
+    "body": "mollis neque quis, lobortis ex.",
+    "author": "Godefridus Vulso",
+    "date": "2009",
+    "tags": [
+      "meditation",
+      "workout",
+      "travel"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Fusce porta",
+    "body": "Aenean quis justo tempor, fringilla turpis a, consectetur ex.",
+    "author": "Furia Aquila",
+    "date": "2022",
+    "tags": [
+      "music",
+      "lifestyle",
+      "meditation"
+    ]
+  },
+  {
+    "id": "5",
+    "title": " Pellentesque habitant",
+    "body": "Fusce faucibus dolor vel erat vehicula hendrerit.",
+    "author": "Caecilia Traius",
+    "date": "2019",
+    "tags": [
+      "tradition",
+      "costumes",
+      "lifestyle"
+    ]
+  },
+  {
+    "id": "96ad26f4-bc66-4d6d-8355-4a6b6eb8531d",
+    "title": "Donec nec",
+    "body": "Fusce vitae lectus lacinia, mollis neque quis, lobortis ex.",
+    "author": "Aureolus Flavillus",
+    "date": "2015",
+    "tags": [
+      "health",
+      "lifestyle",
+      "workout"
+    ]
+  }
+]

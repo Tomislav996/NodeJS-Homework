@@ -1,0 +1,26 @@
+[
+  {
+    "id": "babf7c44-16da-4cef-bba7-193fea77b3c6",
+    "fullname": "Jane Smith",
+    "email": "jane@gmail.com",
+    "password": "dfgjdfg"
+  },
+  {
+    "id": "4e0fbce8-0fc8-4c11-b55a-2cdb15342073",
+    "fullname": "John Smith",
+    "email": "john@gmail.com",
+    "password": "123456"
+  },
+  {
+    "id": "a8a31c59-187d-49e7-b35d-b5d4edecb200",
+    "fullname": "Bob Bobsky",
+    "email": "bobbobsky@outlook.com",
+    "password": "qwerty"
+  },
+  {
+    "id": "ac948b3c-e15c-4ce7-8787-dce8c9e8530b",
+    "fullname": "Paul Anderson",
+    "email": "paul@gmail.com",
+    "password": "irncvnj"
+  }
+]

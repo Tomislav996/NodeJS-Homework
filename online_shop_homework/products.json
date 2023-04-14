@@ -1,0 +1,47 @@
+[
+    {
+      "id": "1",
+      "name": "Nonne estis oblectati?",
+      "price": 99999,
+      "rating": "999",
+      "description": "Trying to edit the product with an ID of 1",
+      "category": "G",
+      "isInStock": false
+    },
+    {
+      "id": "2",
+      "name": "tincidunt tempus",
+      "price": 10,
+      "rating": "4",
+      "description": "Curabitur ullamcorper ultricies nisi",
+      "category": "B",
+      "isInStock": true
+    },
+    {
+      "id": "3",
+      "name": "Donec pede justo",
+      "price": 30,
+      "rating": "3",
+      "description": "Integer tincidunt. Cras dapibus",
+      "category": "C",
+      "isInStock": true
+    },
+    {
+      "id": "4",
+      "name": "Nam dui magna",
+      "price": 5,
+      "rating": "1",
+      "description": "Sed commodo odio vel diam euismod",
+      "category": "D",
+      "isInStock": false
+    },
+    {
+      "id": "5",
+      "name": "tortor auctor",
+      "price": 50,
+      "rating": "4",
+      "description": "Maecenas semper pulvinar ex ac cursus",
+      "category": "B",
+      "isInStock": true
+    }
+  ]
