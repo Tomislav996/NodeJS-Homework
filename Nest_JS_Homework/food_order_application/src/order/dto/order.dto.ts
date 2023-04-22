@@ -12,4 +12,4 @@ export class OrderDtoUpdate {
    // @IsArray() 
    // @ArrayNotEmpty()
     productsOrdered: Product[]
-}
+} 
