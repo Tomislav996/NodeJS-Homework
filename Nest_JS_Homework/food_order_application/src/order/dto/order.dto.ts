@@ -3,13 +3,13 @@ import { ArrayNotEmpty, IsArray } from "class-validator";
 
 
 export class OrderDtoCreate {
-   // @IsArray()
-  //  @ArrayNotEmpty()
+    @IsArray()
+    @ArrayNotEmpty()
     productsOrdered: Product[]
 }
 
 export class OrderDtoUpdate {
-   // @IsArray() 
-   // @ArrayNotEmpty()
+    @IsArray() 
+    @ArrayNotEmpty()
     productsOrdered: Product[]
 } 
