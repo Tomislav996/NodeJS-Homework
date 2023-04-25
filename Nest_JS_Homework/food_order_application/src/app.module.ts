@@ -8,9 +8,6 @@ import { ProductsModule } from './products/products/products.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 
-
-
-// import {TypeOrmModule} from "@nestjs/typeorm"
 @Module({
   imports: [OrderModule,ProductsModule,TypeOrmModule.forRoot({
     type: 'postgres',
