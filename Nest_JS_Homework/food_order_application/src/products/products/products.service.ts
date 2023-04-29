@@ -12,28 +12,6 @@ export class ProductsService {
         @InjectRepository(ProductsEntity)
         private readonly productsRepository: Repository<ProductsEntity>,
     ){}
-    products: Product[] = [
-        {
-            id: '35',
-            productName: 'Chips',
-            productPrice: 35
-        },
-        {
-            id: '27',
-            productName: 'Oranges',
-            productPrice: 30
-        },
-        {
-            id: '19',
-            productName: 'Chocolate Bar',
-            productPrice: 19
-        },
-        {
-            id: '44',
-            productName: 'Chicken',
-            productPrice: 120
-        },
-    ];
 
     getAllProducts() {
         return this.productsRepository.find();
@@ -58,6 +36,6 @@ export class ProductsService {
         return product;
     }
 
-    
 }
+
 

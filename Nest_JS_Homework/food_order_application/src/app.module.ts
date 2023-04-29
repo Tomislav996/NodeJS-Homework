@@ -6,6 +6,7 @@ import { OrderModule } from './order/order.module';
 import { ProductsModule } from './products/products/products.module';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { UsersModule } from './users/users.module';
 
 
 @Module({
@@ -18,7 +19,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     database: 'food_app_db',
     autoLoadEntities: true,
     synchronize: true,
-    })
+    }), UsersModule
  ],
   controllers: [AppController],
   providers: [AppService],
