@@ -7,10 +7,12 @@ import { ProductsModule } from './products/products/products.module';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
+
 
 
 @Module({
-  imports: [OrderModule,ProductsModule,TypeOrmModule.forRoot({
+  imports: [OrderModule,UsersModule, ProductsModule,TypeOrmModule.forRoot({
     type: 'postgres',
     host:  'localhost',
     port: 5432,
@@ -19,7 +21,7 @@ import { UsersModule } from './users/users.module';
     database: 'food_app_db',
     autoLoadEntities: true,
     synchronize: true,
-    }), UsersModule
+    }), AuthModule,
  ],
   controllers: [AppController],
   providers: [AppService],

@@ -1,6 +1,9 @@
-import { Controller, Get, Param, Post, Body, Put, Delete } from '@nestjs/common';
+import { Controller, Get, Param, Post, Body, Put, Delete, UseGuards } from '@nestjs/common';
+
 import { OrderService } from './order.service';
 import { OrderDtoCreate, OrderDtoUpdate } from './dto/order.dto';
+
+import { JwtAuthGuard } from 'src/common/auth/jwt-auth/jwt-auth.guard';
 
  export interface IdRouteParams {
     id: string;
@@ -10,6 +13,7 @@ export class OrderController {
     constructor(private readonly orderService: OrderService){
 
     }
+    @UseGuards(JwtAuthGuard)
     @Get()
     getOrders(){
         const orders = this.orderService.getOrders();

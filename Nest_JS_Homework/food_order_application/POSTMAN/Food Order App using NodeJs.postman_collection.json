@@ -10,7 +10,13 @@
 			"name": "GET ALL ORDERS",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5fZG9lIiwic3ViIjoxLCJpYXQiOjE2ODI5NTc4NDYsImV4cCI6MTY4Mjk1NzkwNn0.HGjfYzWd7HiMn5_mohAeHsiMB3t3uWsCNK0JI_dYjqA",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "http://localhost:3000/orders",
 					"protocol": "http",
@@ -184,6 +190,35 @@
 					"path": [
 						"products",
 						"13af6c17-5ac5-411a-ae7c-d7b5e634e834"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"john_doe\",\r\n    \"password\": \"john123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
 					]
 				}
 			},
