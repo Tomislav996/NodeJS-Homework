@@ -13,7 +13,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5fZG9lIiwic3ViIjoxLCJpYXQiOjE2ODI5NTc4NDYsImV4cCI6MTY4Mjk1NzkwNn0.HGjfYzWd7HiMn5_mohAeHsiMB3t3uWsCNK0JI_dYjqA",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODMzODQxNjUsImV4cCI6MTY4MzM4NDIyNX0.pIkV0OM0j2u046ARUdZCVLBfKxuVY9cz6yG6EVJ26qg",
 						"type": "text"
 					}
 				],
@@ -114,7 +114,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/orders/2",
+					"raw": "http://localhost:3000/orders/1bfe4f0c-296f-4911-832e-ddf7b1ad3011",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -122,7 +122,7 @@
 					"port": "3000",
 					"path": [
 						"orders",
-						"2"
+						"1bfe4f0c-296f-4911-832e-ddf7b1ad3011"
 					]
 				}
 			},
@@ -133,34 +133,6 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/products",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"products"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "CREATE PRODUCT",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"productName\": \"Spinach\",\r\n    \"productPrice\": 30\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
 					"raw": "http://localhost:3000/products",
 					"protocol": "http",
@@ -196,13 +168,117 @@
 			"response": []
 		},
 		{
+			"name": "CREATE PRODUCT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODMzODQ4MDIsImV4cCI6MTY4MzM4NDg2Mn0.TFLF9YxSaCOCUknJRukE_Vc8iFwkI6qFmo2HkjzMYqg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\": \"Spinach\",\r\n    \"productPrice\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE PRODUCT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODMyODcwODksImV4cCI6MTY4MzI4NzE0OX0.i4fJniHyCAwj5890rmrSqh3zpcXyMRcg74gWUIqB-ew",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\": \"Tuna\",\r\n    \"productPrice\": 75\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/792d9ddd-8c9b-42a1-9d39-8deb94645cb5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"792d9ddd-8c9b-42a1-9d39-8deb94645cb5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE PRODUCT",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODMzODUxMzMsImV4cCI6MTY4MzM4NTE5M30.P5qF_3vszGI1ZUwl3dY1XNQHMnT6hHbktbmZlYk_-JQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/6bcc2f58-85f0-4d75-aeec-155dda3db3d7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"6bcc2f58-85f0-4d75-aeec-155dda3db3d7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "LOGIN",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"john_doe\",\r\n    \"password\": \"john123\"\r\n}",
+					"raw": "{\r\n    \"username\": \"mike\",\r\n    \"password\": \"mike123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -219,6 +295,35 @@
 					"path": [
 						"auth",
 						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGISTER USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"mike\",\r\n    \"password\": \"mike123\",\r\n    \"role\": \"customer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
 					]
 				}
 			},
