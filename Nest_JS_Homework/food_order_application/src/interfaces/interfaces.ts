@@ -1,3 +1,5 @@
+import { Role } from "./role.enum";
+
 export interface Product {
     id: string,
     productName: string,
@@ -10,5 +12,10 @@ export interface Order {
     productsOrdered: Product[]
 }
 
+export interface UserToSave {
+    username: string;
+    password: string;
+    role: Role
+}
 
 

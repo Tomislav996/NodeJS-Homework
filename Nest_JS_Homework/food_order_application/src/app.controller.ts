@@ -1,6 +1,7 @@
-import { Controller, Get, UseGuards, Post, Request} from '@nestjs/common';
+import { Controller, Get, UseGuards, Post, Request, Body} from '@nestjs/common';
 
 import { AppService } from './app.service';
+import { UserDtoCreate } from './users/dto/user.dto';
 
 import { AuthGuard } from '@nestjs/passport';
 import { LocalAuthGuard } from './common/auth/local-auth/local-auth.guard';
@@ -21,6 +22,13 @@ export class AppController {
   async login(@Request() req) {
 
     return this.authService.login(req.user);
+  }
+
+  @Post('auth/register')
+  async register(@Body() body: UserDtoCreate){
+    const id = await this.authService.register(body);
+
+    return `User with id: ${id} Created`;
   }
 
 }
