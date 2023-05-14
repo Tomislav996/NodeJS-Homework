@@ -24,7 +24,7 @@ export class AuthService {
         if(user && isPasswordValid) {
             const {password, ...restProperties} = user;
 
-            return {restProperties};
+            return {...restProperties};
         }
 
         return null;
