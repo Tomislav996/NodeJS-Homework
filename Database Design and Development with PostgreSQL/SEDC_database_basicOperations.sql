@@ -38,7 +38,7 @@ SELECT regionname FROM customer;
 
 -- Homework requirement 4/6 --
 
-CREATE TABLE NOT EXISTS "Order" (
+CREATE TABLE IF NOT EXISTS "Order" (
 	Id serial PRIMARY KEY NOT NULL,
     OrderDate date CHECK(OrderDate >= '2010-01-01'),
     Status smallint NULL,
