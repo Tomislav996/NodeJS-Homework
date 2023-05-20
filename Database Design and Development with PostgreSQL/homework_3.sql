@@ -73,6 +73,6 @@ ORDER BY starttime ASC;
 -12-
 
 SELECT DISTINCT recommended.surname, recommended.firstname 
-FROM members recommender
-INNER JOIN members recommended ON recommender.memid = recommended.recommendedby
+FROM members AS recommender
+INNER JOIN members AS recommended ON recommender.memid = recommended.recommendedby
 ORDER BY recommended.surname, recommended.firstname;
