@@ -127,19 +127,20 @@ SELECT * FROM test_table;
 
 -- 18 --
 
-CREATE FUNCTION get_employees_hired_later_than(hire_date DATE) RETURNS TABLE ("full_name" text, "Age_of_employee_on_hiring" numeric(2,5), "National_ID_and_Gender" text) 
+CREATE FUNCTION get_employees_hired_later_than(hire_date DATE) RETURNS TABLE (full_name text, Age_of_employee_on_hiring numeric(2,5), National_ID_and_Gender text)
+LANGUAGE plpgsql
 AS $$
 BEGIN
     RETURN QUERY
-    SELECT CONCAT(firstname, ' ', lastname) AS "full_name",
-           EXTRACT(YEAR FROM AGE(hiredate, dateofbirth)) AS "Age_of_employee_on_hiring",
-           CONCAT(nationalidnumber, '; ', gender) AS "National_ID_and_Gender"
+    SELECT CONCAT(firstname, ' ', lastname) AS full_name,
+           EXTRACT(YEAR FROM AGE(hiredate, dateofbirth)) AS Age_of_employee_on_hiring,
+           CONCAT(nationalidnumber, '; ', gender) AS National_ID_and_Gender
     FROM employee
     WHERE hiredate > hire_date;
-END $$ LANGUAGE plpgsql;
-
+END $$;
 
 SELECT * FROM get_employees_hired_later_than('2013-01-01');
+
 
 -- 19 --
 
